@@ -1,0 +1,157 @@
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: normal;
+  padding: 0 15px;
+}
+
+h1 {
+  color: #2980b9;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h5 {
+  color: #2980b9;
+  font-size: 20px;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+h4 {
+  margin: 10px 0;
+  border-top: 3px solid #2980b9;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border: 3px solid #2980b9;
+  padding: 0 30px;
+}
+
+input,
+select,
+textarea {
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px 1px #888888;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+
+section {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__button {
+  color: #fff;
+  border: none;
+  background: linear-gradient(to right, #3498db, #2980b9);
+  padding: 10px 10px;
+  text-transform: uppercase;
+  user-select: none;
+  margin: 30px 0 30px 0;
+}
+
+.form__button--disabled {
+  color: #fff;
+  border: none;
+  background: linear-gradient(to right, #3498db, #2980b9);
+  padding: 10px 10px;
+  text-transform: uppercase;
+  user-select: none;
+  margin: 30px 0 30px 0;
+  opacity: 50%;
+}
+
+p {
+  color: #27ae60;
+  font-weight: 900;
+  font-size: 18px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.form__refuse-text {
+  color: #e74c3c;
+  font-size: 20px;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+label {
+  user-select: none;
+}
+
+input,
+select {
+  outline: none;
+}
+
+.form__heading-four--highlighted {
+  color: #2980b9;
+}
+
+.form__rent-type,
+.form__licence-question,
+.form__licence-category,
+.form__no-licence,
+.form__rent-date,
+.form__rent-place {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__licence-question {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+}
+
+.form__licence-category {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+}
+
+.form__no-licence {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+}
+
+.form__rent-date {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+}
+
+.form__rent-place {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+}
+
+.form__refuse-text {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+}
+
+.form__button {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+}
+
+.form__accepted {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+}

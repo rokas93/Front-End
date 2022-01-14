@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <fieldset>
+          <legend>Registration</legend>
+          <div class="form__name-surname">
+            <input type="text" placeholder="Vardas" />
+            <input type="text" placeholder="Pavarde" />
+          </div>
+          <input
+            type="text"
+            placeholder="Mobiliojo telefono numeris arba el. pašto adresas"
+          />
+          <input type="password" placeholder="Naujas slaptaždis" />
+
+          <label for="date">Gimimo data</label>
+          <input type="date" id="date" />
+
+          <label for="genre">Lytis</label>
+          <div class="form__genre">
+            <div>
+              <input type="radio" required="required" id="male" name="gender" />
+              <label for="male">Moteris</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                required="required"
+                id="female"
+                name="gender"
+              />
+              <label for="female">Vyras</label>
+            </div>
+            <div>
+              <input type="radio" required="required" id="both" name="gender" />
+              <label for="both">Tinkinta</label>
+            </div>
+          </div>
+          <button>Subscribe</button>
+        </fieldset>
+      </section>
+    </main>
+  </body>
+</html>

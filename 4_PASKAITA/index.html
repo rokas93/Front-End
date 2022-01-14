@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Rent your vehicle today!</h1>
+        <p class="form__accepted">
+          Your rent request accepted! We contact with you shortly!
+        </p>
+        <form action="">
+          <fieldset>
+            <h5>Rent request form</h5>
+            <!-- name surname & phone number -->
+
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Surname" />
+            <input type="email" placeholder="name@domain.com" />
+
+            <input type="tel" placeholder="+370" />
+
+            <!-- rent type -->
+
+            <div class="form__rent-type">
+              <h4>
+                Select your
+                <span class="form__heading-four--highlighted">type</span> of
+                rent:
+              </h4>
+              <select name="rent" id="rent">
+                <option value="select" id="select">-</option>
+                <option value="car" id="car">Car rent</option>
+                <option value="bicycle" id="bicycle">Bicycle rent</option>
+                <option value="scooter" id="scooter">Scooter rent</option>
+              </select>
+            </div>
+
+            <!-- available licence -->
+
+            <div class="form__licence-question">
+              <h4>
+                Do you have
+                <span class="form__heading-four--highlighted"
+                  >driver licence</span
+                >?
+              </h4>
+
+              <label for="yes">
+                <input type="radio" id="yes" name="licence" />
+                Yes &#128513;
+              </label>
+
+              <label for="no">
+                <input type="radio" id="no" name="licence" />
+                No &#128531;
+              </label>
+            </div>
+
+            <!-- licences category -->
+
+            <div class="form__licence-category">
+              <h4>
+                Select licence
+                <span class="form__heading-four--highlighted">categories</span>:
+              </h4>
+
+              <label>
+                <input type="checkbox" id="category" />
+                A category
+              </label>
+
+              <label>
+                <input type="checkbox" id="category" />
+                B category
+              </label>
+
+              <label>
+                <input type="checkbox" id="category" />
+                C category
+              </label>
+
+              <label>
+                <input type="checkbox" id="category" />
+                D category
+              </label>
+
+              <label>
+                <input type="checkbox" id="category" />
+                BE category
+              </label>
+
+              <label>
+                <input type="checkbox" id="category" />
+                CE category
+              </label>
+            </div>
+
+            <!-- licences not available -->
+
+            <div class="form__no-licence">
+              <h4>
+                Vehicle will be driven by
+                <span class="form__heading-four--highlighted"
+                  >another person</span
+                >?
+              </h4>
+
+              <label for="answerYes">
+                <input type="radio" id="answerYes" name="answerYes" />
+                Yes
+              </label>
+
+              <label for="answerNo">
+                <input type="radio" id="answerNo" name="answerYes" />
+                No
+              </label>
+            </div>
+
+            <!-- cancel rent -->
+
+            <h5 class="form__refuse-text">
+              Soory, we can't rent vehicle for you &#128549;
+            </h5>
+
+            <div class="form__rent-date">
+              <h4>
+                Select rent
+                <span class="form__heading-four--highlighted"
+                  >start & end date</span
+                >:
+              </h4>
+              <label for="startD">Starting day:</label>
+              <input
+                type="date"
+                name="startD"
+                id="startD"
+                value="2022-01-13"
+                min="2022-01-13"
+                max="2022-01-31"
+              />
+
+              <label for="endD">Ending day:</label>
+              <input
+                type="date"
+                name="endD"
+                id="endD"
+                min="2022-01-13"
+                max="2022-01-31"
+              />
+            </div>
+
+            <!-- select rent place -->
+
+            <div class="form__rent-place">
+              <h4>
+                Select your
+                <span class="form__heading-four--highlighted">rent place</span>:
+              </h4>
+
+              <select name="place" id="place">
+                <option value="select">-</option>
+                <option value="vilnius">Vilnius</option>
+                <option value="kaunas">Kaunas</option>
+                <option value="klaipeda">Klaipėda</option>
+              </select>
+            </div>
+            <!-- <button type="submit" class="form__button">Rent</button> -->
+            <button type="submit" class="form__button--disabled" disabled>
+              Rent
+            </button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

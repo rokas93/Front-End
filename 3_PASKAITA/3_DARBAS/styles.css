@@ -1,0 +1,27 @@
+body {
+  padding: 0 15px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0 0 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px 1px #888888;
+}
+
+section {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

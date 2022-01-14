@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <span id="top"></span> -->
+    <h1>Hello World! h1</h1>
+    <h3>Hello World! h3</h3>
+    <h6>Hello World! h6</h6>
+    <hr />
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+      perferendis?
+    </p>
+    <hr />
+    <ul>
+      <li>Cat</li>
+      <li>Dog</li>
+      <li>Caw</li>
+      <li>Monkey</li>
+      <li>Bird</li>
+    </ul>
+    <ol>
+      <li>Cat</li>
+      <li>Dog</li>
+      <li>Caw</li>
+      <li>Monkey</li>
+      <li>Bird</li>
+    </ol>
+    <!-- <a href="#top">Go up</a> -->
+    <a href="#">Go up</a>
+    <!-- <img src="./assets/img/nature.jpg" alt="My test img" width="400" />
+    <img
+      src="https://images.pexels.com/photos/3573603/pexels-photo-3573603.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+      alt="My test img"
+      width="400"
+    /> -->
+    <br />
+    <picture>
+      <source media="(min-width: 1000px)" srcset="./assets/img/nature.jpg" />
+      <source
+        media="(min-width: 650px)"
+        srcset="
+          https://images.pexels.com/photos/3573603/pexels-photo-3573603.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+        "
+      />
+      <img src="./assets/img/nature.jpg" alt="Nature" width="200" />
+    </picture>
+    <iframe
+      width="360"
+      height="215"
+      src="https://www.youtube.com/embed/jOLSPc4mZ3E"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
