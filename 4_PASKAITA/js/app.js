@@ -19,18 +19,6 @@ selectVehicle.addEventListener('click', function () {
     licence.style.display = 'flex';
     refuseText.style.display = 'none';
   }
-
-  if (selectVehicle.value === 'select') {
-    licence.style.display = 'none';
-    category.style.display = 'none';
-    another.style.display = 'none';
-    refuseText.style.display = 'none';
-    rentDate.style.display = 'none';
-    yesLicence.checked = false;
-    noLicence.checked = false;
-    answerYes.checked = false;
-    answerNo.checked = false;
-  }
 });
 
 let yesLicence = document.querySelector('#yes');
