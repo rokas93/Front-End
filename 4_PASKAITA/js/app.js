@@ -63,7 +63,7 @@ answerNo.addEventListener('click', function () {
   noLicence.checked = false;
   answerYes.checked = false;
   answerNo.checked = false;
-  selectVehicle.value = 0;
+  selectVehicle.value = '';
 });
 
 let catList = document.querySelectorAll('#category');
