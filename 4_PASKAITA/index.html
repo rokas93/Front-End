@@ -20,10 +20,10 @@
         <p class="form__accepted">
           Your rent request accepted! We contact with you shortly!
         </p>
-        <form action="">
+        <form action="" class="form">
           <fieldset>
             <h5>Rent request form</h5>
-            <!-- name surname & phone number -->
+            <!-- Name surname & phone number -->
 
             <input type="text" placeholder="Name" />
             <input type="text" placeholder="Surname" />
@@ -31,7 +31,7 @@
 
             <input type="tel" placeholder="+370" />
 
-            <!-- rent type -->
+            <!-- Rent type -->
 
             <div class="form__rent-type">
               <h4>
@@ -47,7 +47,7 @@
               </select>
             </div>
 
-            <!-- available licence -->
+            <!-- Available licence -->
 
             <div class="form__licence-question">
               <h4>
@@ -68,7 +68,7 @@
               </label>
             </div>
 
-            <!-- licences category -->
+            <!-- Licences category -->
 
             <div class="form__licence-category">
               <h4>
@@ -105,11 +105,9 @@
                 <input type="checkbox" class="form__category" value="CECategory" />
                 CE category
               </label>
-
-              <button class="bbz">Test</button>
             </div>
 
-            <!-- licences not available -->
+            <!-- Licences not available -->
 
             <div class="form__no-licence">
               <h4>
@@ -130,13 +128,13 @@
               </label>
             </div>
 
-            <!-- cancel rent -->
+            <!-- Cancel rent -->
 
             <h5 class="form__refuse-text">
               Soory, we can't rent vehicle for you &#128549;
             </h5>
 
-            <!-- select start & end date -->
+            <!-- Select start & end date -->
 
             <div class="form__rent-date">
               <h4>
@@ -145,27 +143,24 @@
                   >start & end date</span
                 >:
               </h4>
-              <label for="startD">Starting day:</label>
+              <label for="start-date">Starting day:</label>
               <input
                 type="date"
                 name="startD"
-                id="startD"
-                value="2022-01-13"
-                min="2022-01-13"
-                max="2022-01-31"
+                id="start-date"
+                class="form__select-date"
               />
 
-              <label for="endD">Ending day:</label>
+              <label for="end-date">Ending day:</label>
               <input
                 type="date"
                 name="endD"
-                id="endD"
-                min="2022-01-13"
-                max="2022-01-31"
+                id="end-date"
+                class="form__select-date"
               />
             </div>
 
-            <!-- select rent place -->
+            <!-- Select rent place -->
 
             <div class="form__rent-place">
               <h4>
@@ -175,13 +170,12 @@
 
               <select name="place" id="place">
                 <option value="" selected disabled hidden>Choose</option>
-                <option value="vilnius">Vilnius</option>
-                <option value="kaunas">Kaunas</option>
-                <option value="klaipeda">Klaipėda</option>
+                <option value="vilnius" id="vilnius">Vilnius</option>
+                <option value="kaunas" id="kaunas">Kaunas</option>
+                <option value="klaipeda" id="klaipeda">Klaipėda</option>
               </select>
             </div>
-            <!-- <button type="submit" class="form__button">Rent</button> -->
-            <button type="submit" class="form__button--disabled" disabled>
+            <button type="submit" class="form__button" disabled>
               Rent
             </button>
           </fieldset>

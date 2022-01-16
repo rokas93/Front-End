@@ -57,16 +57,6 @@ section {
   text-transform: uppercase;
   user-select: none;
   margin: 30px 0 30px 0;
-}
-
-.form__button--disabled {
-  color: #fff;
-  border: none;
-  background: linear-gradient(to right, #3498db, #2980b9);
-  padding: 10px 10px;
-  text-transform: uppercase;
-  user-select: none;
-  margin: 30px 0 30px 0;
   opacity: 50%;
 }
 
@@ -113,48 +103,12 @@ input:focus {
   flex-direction: column;
 }
 
-.form__licence-question {
-  display: none;
-  /* display: flex; */
-  justify-content: center;
-}
-
-.form__licence-category {
-  display: none;
-  /* display: flex; */
-  justify-content: center;
-}
-
-.form__no-licence {
-  display: none;
-  /* display: flex; */
-  justify-content: center;
-}
-
-.form__rent-date {
-  display: none;
-  /* display: flex; */
-  justify-content: center;
-}
-
-.form__rent-place {
-  display: none;
-  /* display: flex; */
-  justify-content: center;
-}
-
-.form__refuse-text {
-  display: none;
-  /* display: flex; */
-  justify-content: center;
-}
-
-.form__button {
-  display: none;
-  /* display: flex; */
-  justify-content: center;
-}
-
+.form__licence-question, 
+.form__licence-category,
+.form__no-licence,
+.form__rent-date,
+.form__rent-place,
+.form__refuse-text,
 .form__accepted {
   display: none;
   /* display: flex; */
