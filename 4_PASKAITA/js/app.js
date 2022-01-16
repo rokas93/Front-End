@@ -3,7 +3,7 @@ let selectVehicle = document.querySelector('#rent');
 let type = document.querySelector('.form__rent-type');
 let licence = document.querySelector('.form__licence-question');
 
-selectVehicle.addEventListener('click', function () {
+selectVehicle.addEventListener('change', function () {
   if (selectVehicle.value === 'car')
   {
     licence.style.display = 'flex';
@@ -21,53 +21,63 @@ selectVehicle.addEventListener('click', function () {
   }
 });
 
-let yesLicence = document.querySelector('#yes');
-let noLicence = document.querySelector('#no');
+let yesLicence = document.querySelector('#licence-yes');
+let noLicence = document.querySelector('#licence-no');
 let category = document.querySelector('.form__licence-category');
 let another = document.querySelector('.form__no-licence');
 
-yesLicence.addEventListener('click', function () {
-  category.style.display = 'flex';
-  another.style.display = 'none';
-});
-
-noLicence.addEventListener('click', function () {
-  another.style.display = 'flex';
-  category.style.display = 'none';
-  answerYes.checked = false;
-  answerNo.checked = false;
-});
-
-let answerYes = document.querySelector('#answerYes');
-let answerNo = document.querySelector('#answerNo');
+let answerYes = document.querySelector('#another-yes');
+let answerNo = document.querySelector('#another-no');
 let refuseText = document.querySelector('.form__refuse-text');
-
-answerNo.addEventListener('click', function () {
-  refuseText.style.display = 'flex';
-  licence.style.display = 'none';
-  category.style.display = 'none';
-  another.style.display = 'none';
-  yesLicence.checked = false;
-  noLicence.checked = false;
-  answerYes.checked = false;
-  answerNo.checked = false;
-  selectVehicle.value = '';
-});
 
 let catList = document.querySelectorAll('#category');
 let rentDate = document.querySelector('.form__rent-date');
 
 
+let licenceAnswer = document.querySelectorAll('.form__radio-checkbox');
 
+licenceAnswer.forEach(function (element) {
+  element.addEventListener('click', function () {
+    if (this.value === 'true' & this.name === 'licence') {
+      category.style.display = 'flex';
+      another.style.display = 'none';
+    }
 
-for (let i = 0; i < catList.length; i++) {
-  catList[i].addEventListener('click', function () {
-  if (catList[i].checked == true) {
-    rentDate.style.display = 'flex';
-  }
+    if (this.value === 'false' & this.name === 'licence') {
+      category.style.display = 'none';
+      another.style.display = 'flex';
+      answerYes.checked = false;
+      answerNo.checked = false;
+    }
 
-  else {
-    rentDate.style.display = 'none';
-  }
+    if (this.value === 'false' & this.name === 'another-no') {
+      refuseText.style.display = 'flex';
+      licence.style.display = 'none';
+      category.style.display = 'none';
+      another.style.display = 'none';
+      yesLicence.checked = false;
+      noLicence.checked = false;
+      answerYes.checked = false;
+      answerNo.checked = false;
+      selectVehicle.value = '';
+    }
+  });
 });
+
+let checkboxes = document.querySelector('.form__category');
+
+function selectedCheckboxesArray(allCheckboxes) {
+  let selectedCheckboxes = [];
+  allCheckboxes.forEach(function (checkbox) {
+    if (checkbox.checked == true) {
+      selectedCheckboxes.push(checkbox.value);
+    }
+  });
+  return selectedCheckboxes;
 }
+
+checkboxes.forEach(function (el) {
+  el.addEventListener('click', function () {
+    console.log(selectedCheckboxesArray(checkboxes));
+  });
+});

@@ -57,13 +57,13 @@
                 >?
               </h4>
 
-              <label for="yes">
-                <input type="radio" id="yes" name="licence" />
+              <label for="licence-yes">
+                <input type="radio" id="licence-yes" class="form__radio-checkbox" name="licence" value="true" />
                 Yes &#128513;
               </label>
 
-              <label for="no">
-                <input type="radio" id="no" name="licence" />
+              <label for="licence-no">
+                <input type="radio" id="licence-no" class="form__radio-checkbox" name="licence" value="false" />
                 No &#128531;
               </label>
             </div>
@@ -77,34 +77,36 @@
               </h4>
 
               <label>
-                <input type="checkbox" id="category" />
+                <input type="checkbox" class="form__category" value="ACategory" />
                 A category
               </label>
 
               <label>
-                <input type="checkbox" id="category" />
+                <input type="checkbox" class="form__category" value="BCategory" />
                 B category
               </label>
 
               <label>
-                <input type="checkbox" id="category" />
+                <input type="checkbox" class="form__category" value="CCategory" />
                 C category
               </label>
 
               <label>
-                <input type="checkbox" id="category" />
+                <input type="checkbox" class="form__category" value="DCategory" />
                 D category
               </label>
 
               <label>
-                <input type="checkbox" id="category" />
+                <input type="checkbox" class="form__category" value="BECategory" />
                 BE category
               </label>
 
               <label>
-                <input type="checkbox" id="category" />
+                <input type="checkbox" class="form__category" value="CECategory" />
                 CE category
               </label>
+
+              <button class="bbz">Test</button>
             </div>
 
             <!-- licences not available -->
@@ -117,13 +119,13 @@
                 >?
               </h4>
 
-              <label for="answerYes">
-                <input type="radio" id="answerYes" name="answerYes" />
+              <label for="another-yes">
+                <input type="radio" id="another-yes" class="form__radio-checkbox" name="another-yes" value="true" />
                 Yes
               </label>
 
-              <label for="answerNo">
-                <input type="radio" id="answerNo" name="answerYes" />
+              <label for="another-no">
+                <input type="radio" id="another-no" class="form__radio-checkbox" name="another-no" value="false" />
                 No
               </label>
             </div>
@@ -133,6 +135,8 @@
             <h5 class="form__refuse-text">
               Soory, we can't rent vehicle for you &#128549;
             </h5>
+
+            <!-- select start & end date -->
 
             <div class="form__rent-date">
               <h4>
