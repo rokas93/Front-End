@@ -56,7 +56,7 @@ a:active {
   background-color: blue;
 }
 
-.main__div-1 {
+.main__div:first-child {
   height: 100px;
   margin-bottom: 10px;
   background-color: lightgreen;
@@ -80,7 +80,7 @@ a:active {
   .main__div {
     height: 100px;
   }
-  .main__div-1 {
+  .main__div:first-child {
     height: 300px;
   }
   .footer {
@@ -110,7 +110,7 @@ a:active {
     width: calc((100% - 2rem) / 3);
     height: 200px;
   }
-  .main__div-1 {
+  .main__div:first-child {
     width: 100%;
     height: 400px;
   }
