@@ -1,0 +1,20 @@
+.text-bl {
+  font-weight: 800;
+}
+
+.text-fs-sm {
+  font-size: map-get($map: $font-size, $key: "small");
+}
+
+.text-grey {
+  color: map-get($map: $font-colors, $key: "grey");
+}
+
+// .text-underline {
+//   text-decoration: underline dotted map-get($map: $font-colors, $key: "grey");
+// }
+
+// .text-underline::first-line {
+//   text-decoration: underline solid
+//     map-get($map: $background-colors, $key: "white");
+// }
