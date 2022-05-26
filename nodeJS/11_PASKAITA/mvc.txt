@@ -1,0 +1,9 @@
+MVC patern with Client Side Rendering (like our movie app) implements:
+- Model
+- View (separeted from Back-End)
+- Controller
+
+MVC patern with Server Side Rendering implements:
+- Model
+- View (is a part of Back-End)
+- Controller

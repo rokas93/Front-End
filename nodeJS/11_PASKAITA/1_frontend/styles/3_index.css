@@ -1,0 +1,102 @@
+/* Mobile first */
+/* Mobile */
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+main h1 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+main section h3 {
+  width: 30%;
+}
+
+main section #movies-filter-container {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main section #movies-filter-container label:nth-child(3) {
+  margin-left: 14px;
+}
+
+main section #movies-filter-container select {
+  margin-left: 7px;
+}
+
+main section #movies-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+main section #movies-container div {
+  width: calc((100% - 20px) / 3);
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #f4f4f4;
+  transition: border-color 200ms ease-in;
+}
+
+main section #movies-container div:hover {
+  border-color: #ccc;
+}
+
+main section #movies-container div p:nth-child(2) {
+  padding-top: 5px;
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  main section #movies-container div {
+    width: calc((100% - 40px) / 5);
+    padding: 15px;
+  }
+}
+
+main section #pagination-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+main section #pagination-container button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #555;
+  border: 1px solid #555;
+}
+
+main section #pagination-container button:hover {
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+}
+
+main form {
+  display: flex;
+  justify-content: center;
+}
+
+/* main form input[type='submit'] {
+  background-color: red;
+} */

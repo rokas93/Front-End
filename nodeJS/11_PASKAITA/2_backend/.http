@@ -1,0 +1,30 @@
+GET http://localhost:5000/api/movies
+
+###
+GET http://localhost:5000/api/movies
+
+###
+POST http://localhost:5000/api/movies
+Content-Type: application/json
+
+{
+    "name": "Jaw",
+    "category": "Action",
+    "rentPrice": 5
+}
+
+###
+PUT http://localhost:5000/api/movies/6286640f00df545d0c4c3106
+Content-Type: application/json
+
+{
+    "name": "Batman 2",
+    "category": "Action",
+    "rentPrice": 4
+}
+
+###
+DELETE http://localhost:5000/api/movies/628660903c154b10a0c6fd32
+
+###
+GET http://localhost:5000/api/movies?&text=tion
